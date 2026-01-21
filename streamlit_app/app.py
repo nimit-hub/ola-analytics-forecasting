@@ -150,7 +150,7 @@ st.markdown("""
 col1, col2 = st.columns([0.15, 0.85])
 
 with col1:
-    st.image("BASE_DIR/assets/download.png", width=130)
+    st.image(BASE_DIR/"assets"/"download.png", width=130)
 
 with col2:
     st.markdown("<h1 style='margin-bottom:0;'>Ola Analytics & Forecast Portal</h1>", unsafe_allow_html=True)
@@ -202,7 +202,7 @@ with tab2:
     """, unsafe_allow_html=True)
 
     try:
-        file_path = "BASE_DIR/forecasting/forecast_output.csv"
+        file_path = BASE_DIR/"forecasting/forecast_output.csv"
         df = pd.read_csv(file_path)
         df['booking_date'] = pd.to_datetime(df['booking_date'])
         df['revenue_millions'] = df['forecast_revenue'] / 1_000_000
