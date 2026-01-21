@@ -4,5 +4,4 @@ numpy
 matplotlib
 plotly
 scikit-learn
-file_path = "forecasting/forecast_output.csv"
-.
+
