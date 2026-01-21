@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # 1. Load cleaned rides data
-file_path = r"C:\Users\Nimit\OneDrive\Desktop\Ola Project\data\rides.csv"
+file_path = "data/rides.csv"
 df = pd.read_csv(file_path)
 
 # 2. Convert date
@@ -45,7 +45,7 @@ forecast = pd.DataFrame({
 })
 
 # 7. Save forecast
-output_path = r"C:\Users\Nimit\OneDrive\Desktop\Ola Project\forecasting\forecast_output.csv"
+output_path = "forecasting/forecast_output.csv"
 forecast.to_csv(output_path, index=False)
 
 print("Forecast generated and saved successfully.")

@@ -1,8 +1,8 @@
 import pandas as pd
 import sqlite3
 
-csv_path = r"C:\Users\Nimit\OneDrive\Desktop\Ola Project\data\ncr_ride_bookings.csv  "
-db_path = r"C:\Users\Nimit\OneDrive\Desktop\Ola Project\db\ola_analytics.db"
+csv_path = "data/ncr_ride_bookings.csv"
+db_path = "db/ola_analytics.db"
 
 df = pd.read_csv(csv_path)
 
